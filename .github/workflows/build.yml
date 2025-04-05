@@ -62,9 +62,6 @@ jobs:
           haxelib run lime config JAVA_HOME $JAVA_HOME_17_arm64
           haxelib run lime config ANDROID_SETUP true
 
-      - name: Compile
-        run: haxelib run lime build ${{ inputs.buildArgs }}
-
       - name: Make IPA
         if: inputs.name == 'iOS'
         run: |
