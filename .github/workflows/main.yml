@@ -82,7 +82,7 @@ jobs:
             artifactName: macOSBuild-arm64
             artifactPath: export/release/macos/bin/*
           - name: iOS
-            os: macos-13
+            os: macos-15
             setupCommand: sh ./setup/unix.sh
             buildArgs: ios -final -nosign
             artifactName: iOSBuild
