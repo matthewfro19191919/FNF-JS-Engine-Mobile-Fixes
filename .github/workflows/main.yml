@@ -25,7 +25,7 @@ permissions:
 
 env:
   PROJECT_NAME: JSEngine
-  REPO_PATH: MatthewFro191919/FNF-JS-Engine-Mobile-Fixes
+  REPO_PATH: matthewfro19191919/FNF-JS-Engine-Mobile-Fixes
 
 jobs:
   get-commit-hash:
@@ -53,6 +53,7 @@ jobs:
 
   build:
     name: ${{ matrix.name }}
+    needs: get-commit-hash
     strategy:
       matrix:
         include:
