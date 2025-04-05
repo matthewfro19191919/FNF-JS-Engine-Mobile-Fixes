@@ -60,7 +60,6 @@ class CoolUtil
 		return (m / snap);
 	}
 
-	#if desktop
 	public static var resW:Float = 1;
 	public static var resH:Float = 1;
 	public static var baseW:Float = 1;
@@ -69,7 +68,6 @@ class CoolUtil
 		resW = wid/baseW;
 		resH = height/baseH;
 	}
-	#end
 
 	public static var getUsername = CoolSystemStuff.getUsername;
 	public static var getUserPath = CoolSystemStuff.getUserPath;
