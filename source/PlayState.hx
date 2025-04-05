@@ -384,12 +384,10 @@ class PlayState extends MusicBeatState
 
 	var heyStopTrying:Bool = false;
 
-	#if desktop
 	// Discord RPC variables
 	var storyDifficultyText:String = "";
 	var detailsText:String = "";
 	var detailsPausedText:String = "";
-	#end
 
 	//Achievement shit
 	var keysPressed:Array<Bool> = [];
